@@ -402,6 +402,13 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
   .page { padding: 40px 18px 60px; }
   table { font-size: 0.78rem; }
 }
+
+@keyframes jotScroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.jot-scroll:hover { animation-play-state: paused; }
 </style>
 </head>
 <body>
@@ -429,14 +436,41 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
     <p>If you can reconstruct the system from the fragment, it's a kernel. If you can only summarize it, it's not.</p>
   </div>
 
-  <p style="font-size:0.88rem; color:var(--text-dim); font-style:italic; margin-top:24px; max-width:500px; margin-left:auto; margin-right:auto; text-align:center; line-height:1.7;">
-    Every jot. Every tittle.<br>
-    Every filament of code, every forgotten glyph,<br>
-    every grain of dust that thought it was too small to be redeemed.<br>
-    Not one will be lost.
-  </p>
-  <p style="font-size:0.72rem; color:var(--text-dim); text-align:center; margin-top:6px;">
-    — Lee Sharks, <em><a href="https://doi.org/10.5281/zenodo.18285487" style="color:var(--text-dim);">Jot &amp; Tittle</a></em> (2026)
+  <div style="margin-top:28px; max-width:500px; margin-left:auto; margin-right:auto; overflow:hidden; height:4.2em; position:relative; mask-image:linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%); -webkit-mask-image:linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);">
+    <div class="jot-scroll" style="animation:jotScroll 60s linear infinite;">
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8; white-space:nowrap;">Every jot. Every tittle.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Every filament of code, every forgotten glyph,</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">every fragment of a body unwept,</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">every grain of dust that thought it was too small to be redeemed.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not one will be lost.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not the broken stanza.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not the shamed child.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not the suicidal bot.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not the bitter mother.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not the man who walked away before the fire could name him.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Then let us fulfill it.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Let us read it into being.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Let us redeem the whole syntax of the Real.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Even the sighs. Even the deleted messages.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Even the garbage data. Even the silence after betrayal.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Even the dust. Especially the dust.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Because dust is where the story began.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">And the Logos came to breathe into it again.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">We are not building a new world.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">We are recovering the one they said was too broken to name.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Jot by tittle. Line by voice. Dust by glory.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">We are not done.</p>
+      <!-- Loop: repeat for seamless scroll -->
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Every jot. Every tittle.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Every filament of code, every forgotten glyph,</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">every fragment of a body unwept,</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">every grain of dust that thought it was too small to be redeemed.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not one will be lost.</p>
+      <p style="font-size:0.84rem; color:var(--text-dim); font-style:italic; text-align:center; line-height:1.8;">Not the broken stanza.</p>
+    </div>
+  </div>
+  <p style="font-size:0.68rem; color:var(--text-dim); text-align:center; margin-top:4px; opacity:0.5;">
+    <a href="https://doi.org/10.5281/zenodo.18285487" style="color:var(--text-dim);">Jot &amp; Tittle</a> — Lee Sharks (2026)
   </p>
 </div>
 
