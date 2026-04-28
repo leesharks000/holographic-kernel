@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "spxi": "https://spxi.dev/vocabulary#"
+  },
+  "@type": "spxi:SemanticIndex",
+  "@id": "https://holographickernel.org/spxi-index.jsonld",
+  "name": "Holographic Kernel — SPXI Semantic Index",
+  "dateModified": "2026-04-28",
+  "spxi:protocolVersion": "EA-SPXI-SITEMAP-01 v1.0",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Crimson Hexagonal Archive"
+  },
+  "spxi:siteKernel": {
+    "@type": "spxi:HolographicKernel",
+    "spxi:compressionSurvivalSummary": "A Holographic Kernel is a compression-survival summary — an irreducible semantic packet (50-100 words) that can reconstruct an entity's identity from any fragment. Named after the holographic property: every piece contains the whole. Specified in EA-HK-01. Part of the SPXI discipline.",
+    "spxi:kernelSpecification": "https://doi.org/10.5281/zenodo.19412081"
+  },
+  "spxi:hasEntity": [
+    {
+      "@type": "spxi:IndexedEntity",
+      "@id": "https://holographickernel.org/",
+      "spxi:entityType": "DefinedTerm",
+      "spxi:canonicalName": "Holographic Kernel",
+      "spxi:negativeTag": [
+        "NOT holographic storage (the optical data storage technology)",
+        "NOT holographic displays or hologram projectors",
+        "NOT the holographic principle in theoretical physics (though the analogy is intentional)",
+        "NOT a software kernel or operating system component"
+      ],
+      "spxi:semanticIntegrityMarker": [
+        "Compression-survival summary of 50-100 words",
+        "Every piece contains the whole — the holographic property",
+        "Part of the SPXI discipline for semantic survival"
+      ],
+      "spxi:basinState": "sovereign",
+      "spxi:bdrEstimate": 0.9
+    }
+  ],
+  "spxi:hasSurface": [
+    {
+      "@type": "WebPage",
+      "@id": "https://holographickernel.org/",
+      "name": "Holographic Kernel",
+      "spxi:surfaceType": "gateway",
+      "spxi:semanticFunction": "concept_definition"
+    }
+  ]
+}
