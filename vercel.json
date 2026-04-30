@@ -1,6 +1,19 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.holographickernel.org"
+        }
+      ],
+      "destination": "https://holographickernel.org/:path",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
