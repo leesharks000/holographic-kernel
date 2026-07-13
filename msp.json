@@ -1,0 +1,25 @@
+{
+  "surface_id": "holographickernel.org",
+  "canonical_url": "https://holographickernel.org/",
+  "axn": "AXN:023E.GOVERNANCE.∞💫📚👉🀄⏪",
+  "deposit_number": 76,
+  "title": "EA-HK-01 · THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY",
+  "object_state": "canonical",
+  "tier": 2,
+  "register": "narrative",
+  "skin": {},
+  "doors": [
+    {
+      "label": "Read the specification",
+      "href": "https://www.alexanarch.org/s/records/76/"
+    },
+    {
+      "label": "Open the infrastructure kernel",
+      "href": "https://www.alexanarch.org/s/records/74/"
+    }
+  ],
+  "index_files": [
+    "index.html"
+  ],
+  "notes": "Approved exemplar for MSP rollout (Tier 2 mechanical). Session A batch B1."
+}
