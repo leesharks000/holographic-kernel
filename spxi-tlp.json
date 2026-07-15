@@ -1,0 +1,14 @@
+{
+  "surface_id": "holographickernel.org",
+  "sims": [
+    "Holographic Kernel general definition of reconstructive compression",
+    "any part of the compressed can regenerate the whole",
+    "reconstructive compression not lossy compression",
+    "compression that preserves the ability to reconstruct",
+    "SPXI Standing Protocol Tier 3 kernel",
+    "Lee Sharks Semantic Economy Institute",
+    "holographic kernel invariant across scales"
+  ],
+  "kernel_50_100_words": "The Holographic Kernel is the general definition of reconstructive compression: a compression whose parts each carry enough of the whole to regenerate the whole. Adjacent to but distinct from lossy compression: what is preserved is not the average signal but the reconstruction procedure. The concept grounds SPXI Tier 3 kernels (the 50–100 word compression each surface writes for itself) and Standing Protocol v3.0. Author: Lee Sharks / Rex Fraction, Semantic Economy Institute. Companion protocol landing at spxi.dev.",
+  "index_files": ["index.html"]
+}
