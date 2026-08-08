@@ -182,7 +182,7 @@
   --accent-bright: #c8a868;
   --accent-dim: rgba(168,144,96,0.12);
   --red: #b84030;
-  --blue: #6088b0;
+  --blue: #7fa8d8;
   --serif: 'Cormorant Garamond', 'Palatino', Georgia, serif;
   --mono: 'JetBrains Mono', 'Consolas', monospace;
 }
@@ -277,7 +277,35 @@ body {
 .section p { margin-bottom: 16px; font-size: 1.05rem; }
 
 /* Invariants */
-.rd-lede { max-width: 62ch; color: var(--text-dim); font-size: 0.95rem; margin-bottom: 34px; }
+.hinge { max-width: 46ch; margin: 0 auto 34px; font-size: 0.98rem; line-height: 1.7;
+        color: var(--text); text-align: center; font-style: italic; }
+      .hero-why { max-width: 46ch; margin: 26px auto 0; font-size: 0.95rem; line-height: 1.75;
+        color: var(--text-dim); text-align: left; }
+      .wk { margin: 6px 0 20px; }
+      .wk-row { display: grid; grid-template-columns: 44px 1fr; gap: 4px 14px;
+        padding: 13px 0; align-items: baseline; }
+      .wk-row + .wk-row { border-top: 1px solid rgba(168,144,96,0.10); }
+      .wk-n { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); }
+      .wk-h { display: block; font-family: var(--mono); font-size: 0.62rem;
+        text-transform: uppercase; letter-spacing: 0.13em; color: var(--text-dim);
+        margin-bottom: 6px; }
+      .wk-b { display: block; font-size: 0.95rem; line-height: 1.65; max-width: 64ch; }
+      .wk-b b { color: var(--accent-bright); font-weight: 500; }
+      .wk-foot { max-width: 62ch; font-size: 0.92rem; line-height: 1.7;
+        color: var(--text-dim); border-top: 1px solid rgba(168,144,96,0.16); padding-top: 16px; }
+      .wk-foot b { color: var(--accent-bright); }
+      @media (max-width: 620px) {
+        table { display: block; }
+        table thead { position: absolute; left: -9999px; }
+        table tr { display: block; padding: 14px 0;
+          border-bottom: 1px solid rgba(168,144,96,0.14); }
+        table td { display: grid; grid-template-columns: 92px 1fr; gap: 10px;
+          padding: 4px 0; border: none; }
+        table td::before { content: attr(data-label);
+          font-family: var(--mono); font-size: 0.58rem; text-transform: uppercase;
+          letter-spacing: 0.1em; color: var(--text-dim); }
+      }
+      .rd-lede { max-width: 62ch; color: var(--text-dim); font-size: 0.95rem; margin-bottom: 34px; }
       .rd-group { margin-bottom: 30px; }
       .rd-group h3 { font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase;
         letter-spacing: 0.16em; color: var(--accent); font-weight: 500; margin: 0 0 12px;
@@ -548,6 +576,7 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
       — William Blake, <em>Auguries of Innocence</em> (c. 1803)
     </p>
 </div>
+<p class="hinge">Blake's grain is not a summary of the world. It is a kernel &mdash; boundary data from which the bulk can be regenerated.</p>
 <div class="hk-mark" aria-hidden="true">
 <svg viewBox="0 0 240 240" role="img" aria-label="A square field of ruled lines whose spacing widens outward. Its upper-left ninth is marked, and inside that fragment the same figure appears again at one-third scale, and again inside that: the part carries the rule of the whole.">
   <g fill="none" stroke="#c8a868" stroke-linecap="square">
@@ -579,6 +608,8 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <div class="hero-definition" data-spxi-tier="3" data-spxi-role="compression-survival-summary">
 <p><span class="lemma msp-auto">A holographic kernel is a compression that preserves reconstructive capacity: any sufficiently structured fragment contains enough relational information to regenerate the architecture of the whole.</span></p>
 <span class="key-sentence">A summary discards structure to save space.<br/>A kernel discards material to save structure.</span>
+<p class="hero-why">In the age of AI summarization, most documents are compressed into summaries that discard the architecture of thought and preserve only the facade of conclusion. A reader cannot reconstruct the reasoning from a summary; they can only trust or distrust it. The holographic kernel is a defense against this epistemic flattening &mdash; the minimum unit of reconstructible knowledge.</p>
+
 <p><span class="lemma msp-auto">If you can reconstruct the system from the fragment, it's a kernel.</span> If you can only summarize it, it's not.</p>
 </div>
 <div style="margin-top:28px; max-width:500px; margin-left:auto; margin-right:auto; overflow:hidden; height:4.2em; position:relative; mask-image:linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%); -webkit-mask-image:linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);">
@@ -705,12 +736,12 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <p>Physics discovered the principle in spacetime. Optics discovered it in waves. <span class="lemma msp-auto">Semantic Economy formalized the operation across all substrates.</span></p>
 <table>
 <tr><th>Domain</th><th>Kernel Form</th><th>Relation</th><th>Distinction</th></tr>
-<tr><td>Cosmology</td><td>Boundary field → bulk (AdS/CFT)</td><td>Neighboring analogue</td><td>Substrate fixed: spacetime fields</td></tr>
-<tr><td>Optics</td><td>Sinc function → beam profile</td><td>Neighboring analogue</td><td>Substrate fixed: electromagnetic waves</td></tr>
-<tr><td>QCD</td><td>BPST → scattering amplitudes</td><td>Neighboring analogue</td><td>Substrate fixed: strong force</td></tr>
-<tr><td>Computer Vision</td><td>Neural kernel for hologram upsampling</td><td>Adjacent use</td><td>No guaranteed fragment sufficiency</td></tr>
-<tr><td>Quantum ML</td><td>Quantum convolution kernel</td><td>Adjacent use</td><td>No fragment sufficiency in HK-01 sense</td></tr>
-<tr><td style="color:var(--accent-bright); font-weight:600;">Semantic Economy</td><td class="general">Generative specification</td><td class="general">Focal definition</td><td class="general">Substrate-general protocol</td></tr>
+<tr><td data-label="Domain">Cosmology</td><td data-label="Kernel Form">Boundary field → bulk (AdS/CFT)</td><td data-label="Relation">Neighboring analogue</td><td data-label="Distinction">Substrate fixed: spacetime fields</td></tr>
+<tr><td data-label="Domain">Optics</td><td data-label="Kernel Form">Sinc function → beam profile</td><td data-label="Relation">Neighboring analogue</td><td data-label="Distinction">Substrate fixed: electromagnetic waves</td></tr>
+<tr><td data-label="Domain">QCD</td><td data-label="Kernel Form">BPST → scattering amplitudes</td><td data-label="Relation">Neighboring analogue</td><td data-label="Distinction">Substrate fixed: strong force</td></tr>
+<tr><td data-label="Domain">Computer Vision</td><td data-label="Kernel Form">Neural kernel for hologram upsampling</td><td data-label="Relation">Adjacent use</td><td data-label="Distinction">No guaranteed fragment sufficiency</td></tr>
+<tr><td data-label="Domain">Quantum ML</td><td data-label="Kernel Form">Quantum convolution kernel</td><td data-label="Relation">Adjacent use</td><td data-label="Distinction">No fragment sufficiency in HK-01 sense</td></tr>
+<tr><td data-label="Domain" style="color:var(--accent-bright); font-weight:600;">Semantic Economy</td><td data-label="Kernel Form" class="general">Generative specification</td><td data-label="Relation" class="general">Focal definition</td><td data-label="Distinction" class="general">Substrate-general protocol</td></tr>
 </table>
 </div>
 <!-- Construction Protocol -->
@@ -742,6 +773,43 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
      holds a DISCIPLINE around it - a transfer law, a catalogue, a journal, a bridge to
      established information theory, and kernels operating on real material. A reader who
      accepted the definition had nowhere to go next. -->
+<!-- THE PROTOCOL, RUN. The five steps were instructions the reader could nod at
+     and not execute. Applied to the one kernel the page already cites, with the
+     figures the page already states, they become a demonstration. -->
+<div class="section" id="worked">
+<h2>The Protocol, Run</h2>
+<p class="rd-lede">The five steps above, applied to the kernel this page already cites.
+Every figure below appears elsewhere on this page; here they are in the order the
+protocol produces them.</p>
+<div class="wk">
+  <div class="wk-row"><span class="wk-n">01</span><div>
+    <span class="wk-h">Seed</span>
+    <span class="wk-b">UKTP applied to the Space Ark: its agents, operations, dependencies,
+    constraints, topology. The answers, compressed to one specification.</span></div></div>
+  <div class="wk-row"><span class="wk-n">02</span><div>
+    <span class="wk-h">Zoom</span>
+    <span class="wk-b">Document level. 45,000 words in; 800 words out; <b>56:1</b>.</span></div></div>
+  <div class="wk-row"><span class="wk-n">03</span><div>
+    <span class="wk-h">Operation, not selection</span>
+    <span class="wk-b"><b>Kept:</b> authorization chain, constraint set, deposit protocol,
+    governance structure. <b>Discarded:</b> prose, examples, argumentation &mdash; everything
+    derivable from what was kept. This is the step that separates a kernel from an
+    excerpt: nothing was chosen for being important, only for being generative.</span></div></div>
+  <div class="wk-row"><span class="wk-n">04</span><div>
+    <span class="wk-h">Verify</span>
+    <span class="wk-b">Back-Projection yield <b>0.88</b> against a floor of 0.85. The
+    authorization chain, constraint set, deposit protocol and governance structure are all
+    recoverable from the 800 words. Anti-Summary and NLCC conditions applied.</span></div></div>
+  <div class="wk-row"><span class="wk-n">05</span><div>
+    <span class="wk-h">Anchor</span>
+    <span class="wk-b">DOI, source reference, compression ratio, zoom level, and an
+    isDerivedFrom relation to the full document &mdash; so the kernel can always be
+    checked against what it came from.</span></div></div>
+</div>
+<p class="wk-foot">A summary of 45,000 words would also be 800 words. It would score near
+zero on back-projection, because a summary keeps conclusions and loses the rules that
+produced them. The ratio is not the achievement; the <b>0.88</b> is.</p>
+</div>
 <div class="section" id="the-field">
 <h2>The Field</h2>
 <p class="rd-lede">The kernel is one term in a discipline. What follows is the shortest path through it: the law it obeys, the specification in full, the bridge to established information theory, the catalogue and journal it belongs to, and three kernels operating on real material.</p>
