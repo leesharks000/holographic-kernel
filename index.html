@@ -340,6 +340,9 @@ body {
         border-left: 2px solid rgba(168,144,96,0.20); padding-left: 12px; margin-bottom: 16px; }
       pre.cmp-sample { font-family: var(--mono); font-size: 0.78rem; white-space: pre-wrap;
         color: var(--text); }
+      .cmp-src { font-size: 0.78rem; line-height: 1.55; color: var(--text-dim);
+        margin: -6px 0 14px; }
+      pre.cmp-sample b { color: var(--accent-bright); font-weight: 400; }
       .cmp-lab { display: block; font-family: var(--mono); font-size: 0.58rem;
         text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim);
         margin: 12px 0 6px; }
@@ -733,12 +736,15 @@ about 800 words. Only one of them can be expanded back.</p>
   </div>
   <div class="cmp-col cmp-pass">
     <span class="cmp-kind">Kernel</span>
-    <pre class="cmp-sample">agents:        &hellip;
-operations:    &hellip;
-constraints:   &hellip;
-dependencies:  &hellip;
-authorization: &hellip;
-topology:      &hellip;</pre>
+    <pre class="cmp-sample">agents        who is present, in what formal role
+operations    what the text <b>performs</b>, not describes
+dependencies  what must precede, enable, cost what
+constraints   what is forbidden, required, invariant
+topology      hierarchy · loop · one-way gate · coupling</pre>
+<p class="cmp-src">The five questions of the Universal Kernel Transform Protocol
+(<a href="https://www.alexanarch.org/s/records/547/">EA-UKTP v1.1</a>). The seed is
+these answers compressed to one formal specification &mdash; not the theme, not the
+vocabulary, not the surface structure.</p>
     <span class="cmp-lab">Recovers</span>
     <ul><li>authorization chain</li><li>constraint set</li>
         <li>deposit protocol</li><li>governance structure</li></ul>
