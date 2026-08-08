@@ -305,6 +305,40 @@ body {
           font-family: var(--mono); font-size: 0.58rem; text-transform: uppercase;
           letter-spacing: 0.1em; color: var(--text-dim); }
       }
+      .epigraph-block { margin: 44px auto 0; max-width: 520px;
+        border-top: 1px solid rgba(168,144,96,0.16); padding-top: 30px; }
+      .idstrip { margin-top: 34px; opacity: .8; }
+      .cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 8px 0 22px; }
+      .cmp-col { background: var(--bg2); border: 1px solid rgba(168,144,96,0.16);
+        border-radius: 6px; padding: 20px 20px 18px; }
+      .cmp-fail { border-color: rgba(184,64,48,0.30); }
+      .cmp-pass { border-color: rgba(168,144,96,0.34); }
+      .cmp-kind { display: block; font-family: var(--mono); font-size: 0.62rem;
+        text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 14px; }
+      .cmp-fail .cmp-kind { color: #b84030; }
+      .cmp-pass .cmp-kind { color: var(--accent-bright); }
+      .cmp-sample { font-size: 0.88rem; line-height: 1.6; color: var(--text-dim);
+        border-left: 2px solid rgba(168,144,96,0.20); padding-left: 12px; margin-bottom: 16px; }
+      pre.cmp-sample { font-family: var(--mono); font-size: 0.78rem; white-space: pre-wrap;
+        color: var(--text); }
+      .cmp-lab { display: block; font-family: var(--mono); font-size: 0.58rem;
+        text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim);
+        margin: 12px 0 6px; }
+      .cmp-lab.cmp-no { color: #8a8478; }
+      .cmp-col ul { margin: 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.65; }
+      .cmp-nolist { color: var(--text-dim); }
+      .cmp-verdict { font-size: 0.88rem; line-height: 1.6; margin-top: 16px;
+        padding-top: 12px; border-top: 1px solid rgba(168,144,96,0.12); }
+      .cmp-verdict b { color: var(--accent-bright); }
+      @media (max-width: 620px) { .cmp { grid-template-columns: 1fr; gap: 16px; } }
+      .mspcolophon-wrap { margin-top: 28px; }
+      .mspcolophon-wrap > summary { cursor: pointer; font-family: var(--mono);
+        font-size: 0.62rem; letter-spacing: 0.08em; color: var(--text-dim);
+        padding: 8px 0; list-style: none; }
+      .mspcolophon-wrap > summary::-webkit-details-marker { display: none; }
+      .mspcolophon-wrap > summary::before { content: "\25B8 "; color: var(--accent); }
+      .mspcolophon-wrap[open] > summary::before { content: "\25BE "; }
+      .verify-cta { color: var(--accent); }
       .rd-lede { max-width: 62ch; color: var(--text-dim); font-size: 0.95rem; margin-bottom: 34px; }
       .rd-group { margin-bottom: 30px; }
       .rd-group h3 { font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase;
@@ -560,23 +594,8 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <!-- SPXI-TLP-HEAD-END -->
 </head>
 <body>
-<!-- MSP-IDSTRIP-START -->
-<div class="idstrip"><span class="axn">∞💫📚👉🀄⏪ AXN:023E.GOVERNANCE</span><span class="st">EA-HK-01 · THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY</span><span class="st">OBJECT: CANONICAL</span><span>holographickernel.org</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/76/">deposit #76</a></div>
-<!-- MSP-IDSTRIP-END -->
 <div class="page">
 <div class="hero">
-<div style="margin-bottom:36px; max-width:520px; margin-left:auto; margin-right:auto;">
-<p style="font-size:1.15rem; font-style:italic; color:var(--accent-bright); line-height:1.8; text-align:center; letter-spacing:0.02em;">
-      To see a World in a Grain of Sand<br/>
-      And a Heaven in a Wild Flower<br/>
-      Hold Infinity in the Palm of your Hand<br/>
-      And Eternity in an Hour
-    </p>
-<p style="font-size:0.78rem; color:var(--text-dim); text-align:center; margin-top:8px;">
-      — William Blake, <em>Auguries of Innocence</em> (c. 1803)
-    </p>
-</div>
-<p class="hinge">Blake's grain is not a summary of the world. It is a kernel &mdash; boundary data from which the bulk can be regenerated.</p>
 <div class="hk-mark" aria-hidden="true">
 <svg viewBox="0 0 240 240" role="img" aria-label="A square field of ruled lines whose spacing widens outward. Its upper-left ninth is marked, and inside that fragment the same figure appears again at one-third scale, and again inside that: the part carries the rule of the whole.">
   <g fill="none" stroke="#c8a868" stroke-linecap="square">
@@ -609,6 +628,24 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <p><span class="lemma msp-auto">A holographic kernel is a compression that preserves reconstructive capacity: any sufficiently structured fragment contains enough relational information to regenerate the architecture of the whole.</span></p>
 <span class="key-sentence">A summary discards structure to save space.<br/>A kernel discards material to save structure.</span>
 <p class="hero-why">In the age of AI summarization, most documents are compressed into summaries that discard the architecture of thought and preserve only the facade of conclusion. A reader cannot reconstruct the reasoning from a summary; they can only trust or distrust it. The holographic kernel is a defense against this epistemic flattening &mdash; the minimum unit of reconstructible knowledge.</p>
+<div class="epigraph-block">
+<div style="margin-bottom:36px; max-width:520px; margin-left:auto; margin-right:auto;">
+<p style="font-size:1.15rem; font-style:italic; color:var(--accent-bright); line-height:1.8; text-align:center; letter-spacing:0.02em;">
+      To see a World in a Grain of Sand<br/>
+      And a Heaven in a Wild Flower<br/>
+      Hold Infinity in the Palm of your Hand<br/>
+      And Eternity in an Hour
+    </p>
+<p style="font-size:0.78rem; color:var(--text-dim); text-align:center; margin-top:8px;">
+      — William Blake, <em>Auguries of Innocence</em> (c. 1803)
+    </p>
+</div>
+<p class="hinge">Blake's grain is not a summary of the world. It is a kernel &mdash; boundary data from which the bulk can be regenerated.</p>
+</div>
+<!-- MSP-IDSTRIP-START -->
+<div class="idstrip"><span class="axn">∞💫📚👉🀄⏪ AXN:023E.GOVERNANCE</span><span class="st">EA-HK-01 · THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY</span><span class="st">OBJECT: CANONICAL</span><span>holographickernel.org</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/76/">deposit #76</a></div>
+<!-- MSP-IDSTRIP-END -->
+
 
 <p><span class="lemma msp-auto">If you can reconstruct the system from the fragment, it's a kernel.</span> If you can only summarize it, it's not.</p>
 </div>
@@ -650,6 +687,51 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
   </p>
 </div>
 <!-- Scope -->
+<!-- THE COMPARISON. The site carried a NON-EXAMPLE card with no example beside
+     it, so the reader was shown a failure without the success it fails against.
+     Same source, both operations, what each can and cannot recover. -->
+<div class="section" id="comparison">
+<h2>Same Source, Two Operations</h2>
+<p class="rd-lede">A 45,000-word governing document, compressed twice. Both outputs are
+about 800 words. Only one of them can be expanded back.</p>
+<div class="cmp">
+  <div class="cmp-col cmp-fail">
+    <span class="cmp-kind">Summary</span>
+    <p class="cmp-sample">&ldquo;Space Ark is an archive-governance document concerned with
+    deposit protocol, authorization, and the constraints under which the archive
+    operates&hellip;&rdquo;</p>
+    <span class="cmp-lab">Recovers</span>
+    <ul><li>subject</li><li>broad purpose</li><li>author</li></ul>
+    <span class="cmp-lab cmp-no">Cannot recover</span>
+    <ul class="cmp-nolist">
+      <li>authorization order</li><li>forbidden operations</li>
+      <li>dependency graph</li><li>topology</li><li>governing constraints</li></ul>
+    <p class="cmp-verdict">Back-projection near zero. The reader can trust it or distrust
+    it. They cannot check it.</p>
+  </div>
+  <div class="cmp-col cmp-pass">
+    <span class="cmp-kind">Kernel</span>
+    <pre class="cmp-sample">agents:        &hellip;
+operations:    &hellip;
+constraints:   &hellip;
+dependencies:  &hellip;
+authorization: &hellip;
+topology:      &hellip;</pre>
+    <span class="cmp-lab">Recovers</span>
+    <ul><li>authorization chain</li><li>constraint set</li>
+        <li>deposit protocol</li><li>governance structure</li></ul>
+    <span class="cmp-lab cmp-no">Discards</span>
+    <ul class="cmp-nolist">
+      <li>prose</li><li>examples</li><li>argumentation</li>
+      <li><em>&mdash; all derivable from what was kept</em></li></ul>
+    <p class="cmp-verdict">Back-projection <b>0.88</b>. The reader can regenerate the
+    architecture and check the result against the source.</p>
+  </div>
+</div>
+<p class="wk-foot">The summary is not badly written. It is a faithful account of what the
+document <em>says</em>. It simply does not carry the rules by which the document
+<em>works</em> &mdash; and that is the whole distinction.</p>
+</div>
 <div class="section">
 <h2>Scope</h2>
 <p><span class="lemma msp-auto">In the age of AI summarization, most documents are compressed into summaries that discard the architecture of thought and preserve only the facade of conclusion.</span> A reader cannot reconstruct the reasoning from the summary; they can only trust or distrust it. The holographic kernel is a defense against this epistemic flattening — the minimum unit of <strong>reconstructible knowledge</strong>, the smallest fragment that preserves not what was said, but how it was structured.</p>
@@ -858,7 +940,10 @@ produced them. The ratio is not the achievement; the <b>0.88</b> is.</p>
 </div>
 <!-- MSP-APPARATUS-START -->
 <div class="doors"><a class="w-chip" href="https://www.alexanarch.org/s/records/76/">Read the specification</a><a class="w-chip" href="https://www.alexanarch.org/s/records/74/">Open the infrastructure kernel</a></div>
+<details class="mspcolophon-wrap">
+<summary>Provenance, hash, generator and correction history &mdash; <span class="verify-cta">verify this document</span></summary>
 <div class="mspcolophon">colophon · surface_id: holographickernel.org · canonical_url: https://holographickernel.org/ · object_state: canonical · surface_observed_at: 2026-07-13T22:13:15Z · source_object_ids: deposit #76 · source_hashes: unknown · generator_version: hand-built static (no generator) · repository_commit: 3b4b3c8a6841b056933ebc8868d78c3edef8caa2 · model_or_agent: drafted with Claude (TACHYON), MANUS-approved · operator_sequence: n/a · human_approver: Lee Sharks (MANUS) · approval_timestamp: 2026-07-13T22:13:15Z · render_sha256 (of this file with this field’s value set to null): 2b7679b6c3d81e68f97b8b7ded96a2cc74bd99061e69e28b9d658ae6bac85244 · correction_log_url: https://github.com/leesharks000/holographic-kernel/commits/main/index.html — EA-APPARATUS-01 v0.3, AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎</div>
+</details>
 <!-- MSP-APPARATUS-END -->
 <footer>
 <p>Holographic Kernel specification <strong>EA-HK-01</strong> · <a href="https://semanticeconomy.org">Semantic Economy Institute</a></p>
