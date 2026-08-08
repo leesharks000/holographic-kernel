@@ -241,7 +241,27 @@ body {
 
 .hero-definition p:last-child { margin-bottom: 0; }
 
-.hero-definition .hk-mark { margin: 0 auto 30px; width: 132px; }
+.hero-definition .inv-fig { float: right; width: 126px; margin: 2px 0 8px 18px; }
+      .inv-fig svg { width: 100%; height: auto; display: block; opacity: .9; }
+      .invariant { overflow: hidden; }
+      .hk-fig-sm { margin: 22px 0 30px; }
+      @media (max-width: 560px) { .inv-fig { float: none; width: 118px; margin: 0 0 10px; } }
+      .lockup { display: flex; align-items: center; justify-content: center;
+        gap: 26px; margin-bottom: 34px; text-align: left; }
+      .lockup .hk-mark { margin: 0; flex: 0 0 132px; }
+      .lockup-words h1 { margin-bottom: 4px; line-height: 1.02; }
+      .lockup-words .subtitle { font-size: 0.92rem; margin-bottom: 0; }
+      @media (max-width: 620px) {
+        .lockup { gap: 18px; }
+        .lockup .hk-mark { flex: 0 0 96px; }
+        .lockup-words h1 { font-size: 2rem; }
+        .lockup-words .subtitle { font-size: 0.82rem; line-height: 1.4; }
+      }
+      @media (max-width: 400px) {
+        .lockup { flex-direction: column; gap: 20px; text-align: center; }
+        .lockup .hk-mark { flex: 0 0 112px; }
+      }
+      .hk-mark { margin: 0 auto 30px; width: 132px; }
       .hk-mark svg { width: 100%; height: auto; display: block; }
       .hero-definition > p { font-size: 1.06rem; line-height: 1.75; }
       .hero-definition .key-sentence + p { margin-top: 22px; }
@@ -598,6 +618,7 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <!-- MSP-IDSTRIP-END -->
 <div class="page">
 <div class="hero">
+<div class="lockup">
 <div class="hk-mark" aria-hidden="true">
 <svg viewBox="0 0 240 240" role="img" aria-label="A square field of ruled lines whose spacing widens outward. Its upper-left ninth is marked, and inside that fragment the same figure appears again at one-third scale, and again inside that: the part carries the rule of the whole.">
   <g fill="none" stroke="#c8a868" stroke-linecap="square">
@@ -624,8 +645,10 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
   </g>
 </svg>
 </div>
-<h1>Holographic Kernel</h1>
-<p class="subtitle">The General Definition of Reconstructive Compression</p>
+<div class="lockup-words"><h1>Holographic Kernel</h1><p class="subtitle">The General Definition of Reconstructive Compression</p></div>
+</div>
+
+
 <div class="hero-definition" data-spxi-tier="3" data-spxi-role="compression-survival-summary">
 <p><span class="lemma msp-auto">A holographic kernel is a compression that preserves reconstructive capacity: any sufficiently structured fragment contains enough relational information to regenerate the architecture of the whole.</span></p>
 <span class="key-sentence">A summary discards structure to save space.<br/>A kernel discards material to save structure.</span>
@@ -682,7 +705,7 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 </div>
 </div>
 <p style="font-size:0.68rem; color:var(--text-dim); text-align:center; margin-top:4px; opacity:0.5;">
-<a class="axn-chip" href="https://www.alexanarch.org/s/records/346/" style="color:var(--text-dim);">Jot &amp; Tittle</a> — Lee Sharks (2026)
+<a class="axn-chip" href="https://www.alexanarch.org/s/records/318/" style="color:var(--text-dim);">Jot &amp; Tittle</a> — Lee Sharks (2026)
   </p>
 </div>
 <!-- Scope -->
@@ -733,7 +756,6 @@ document <em>says</em>. It simply does not carry the rules by which the document
 </div>
 <div class="section">
 <h2>Scope</h2>
-<p><span class="lemma msp-auto">In the age of AI summarization, most documents are compressed into summaries that discard the architecture of thought and preserve only the facade of conclusion.</span> A reader cannot reconstruct the reasoning from the summary; they can only trust or distrust it. The holographic kernel is a defense against this epistemic flattening — the minimum unit of <strong>reconstructible knowledge</strong>, the smallest fragment that preserves not what was said, but how it was structured.</p>
 <p><span class="lemma msp-auto">The phrase "holographic kernel" appears in optical holography, holographic QCD, cosmology, computer vision, and semantic architecture.</span> EA-HK-01 formalizes the <strong>Semantic Economy</strong> use: a reconstructive compression object for meaning-systems, archives, protocols, documents, and web entities.</p>
 <p><span class="lemma msp-auto">Domain-specific scientific uses remain valid within their substrates.</span> This specification supplies the <strong>substrate-general</strong> form — defining the operation independently of any one physical, optical, computational, or textual substrate. It provides the construction and verification protocols that no domain-specific use specifies. This is not colonization of the physics term. It is the formalization of the shared operation that connects holographic cosmology, holographic optics, and holographic QCD under a single principle — and extends it to meaning-systems.</p>
 </div>
@@ -775,13 +797,13 @@ document <em>says</em>. It simply does not carry the rules by which the document
 <div class="section">
 <h2>Three Invariants</h2>
 <div class="invariant">
-<strong>1. Boundary-to-bulk reconstruction.</strong> The kernel encodes generative logic — rules, relations, constraints, dependencies — not the data itself. The kernel is boundary data; the system is the bulk.
+<div class="inv-fig"><svg viewBox="0 0 120 72" role="img" aria-label="A small dense block, an arrow, and a larger sparse field drawn from the same kind of lines."><g stroke="#c8a868" fill="none" stroke-width="1.3"><rect x="6" y="20" width="22" height="32"/><path d="M10 27h14M10 33h11M10 39h14M10 45h10" stroke-width=".8" opacity=".8"/></g><path d="M34 36h16" stroke="#a89060" stroke-width="1.1"/><path d="M46 33l5 3-5 3" stroke="#a89060" stroke-width="1.1" fill="none"/><g stroke="#c8a868" fill="none" stroke-width="1"><rect x="56" y="10" width="58" height="52" opacity=".7"/><path d="M62 20h46M62 30h36M62 40h46M62 50h30" stroke-width=".7" opacity=".5"/></g></svg></div><strong>1. Boundary-to-bulk reconstruction.</strong> The kernel encodes generative logic — rules, relations, constraints, dependencies — not the data itself. The kernel is boundary data; the system is the bulk.
   </div>
 <div class="invariant">
-<strong>2. Fragment sufficiency.</strong> Any single kernel instance contains enough structure to regenerate the parent's architecture. Operationalized: Back-Projection Test yield ≥ 0.85.
+<div class="inv-fig"><svg viewBox="0 0 120 72" role="img" aria-label="One marked corner of a field regenerates a complete field beside it."><g stroke="#c8a868" fill="none" stroke-width="1"><rect x="8" y="12" width="46" height="48" opacity=".5"/><path d="M14 22h34M14 32h26M14 42h34M14 52h22" stroke-width=".7" opacity=".4"/></g><g stroke="#c8a868" fill="none" stroke-width="1.4"><rect x="8" y="12" width="16" height="16"/></g><path d="M60 36h14" stroke="#a89060" stroke-width="1.1"/><path d="M70 33l5 3-5 3" stroke="#a89060" stroke-width="1.1" fill="none"/><g stroke="#c8a868" fill="none" stroke-width="1.1"><rect x="80" y="12" width="34" height="48"/><path d="M85 22h24M85 32h18M85 42h24M85 52h15" stroke-width=".7" opacity=".55"/></g></svg></div><strong>2. Fragment sufficiency.</strong> Any single kernel instance contains enough structure to regenerate the parent's architecture. Operationalized: Back-Projection Test yield ≥ 0.85.
   </div>
 <div class="invariant">
-<strong>3. Compression with structural preservation.</strong> Material is discarded. Structure is retained. The discarded material is derivable from the retained structure.
+<div class="inv-fig"><svg viewBox="0 0 120 72" role="img" aria-label="A retained structure beside a dashed outline marked discarded, with an arrow showing the discarded part is derivable from what was retained."><g stroke="#c8a868" fill="none" stroke-width="1.2"><rect x="8" y="14" width="40" height="44"/><path d="M13 24h30M13 32h22M13 40h30M13 48h18" stroke-width=".8"/></g><g stroke="#8a8478" fill="none" stroke-width=".8" stroke-dasharray="3 3" opacity=".55"><rect x="56" y="14" width="24" height="44"/></g><text x="68" y="68" text-anchor="middle" font-family="monospace" font-size="7" fill="#8a8478">discarded</text><path d="M88 36h10" stroke="#a89060" stroke-width="1.1"/><text x="108" y="39" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#c8a868">derivable</text></svg></div><strong>3. Compression with structural preservation.</strong> Material is discarded. Structure is retained. The discarded material is derivable from the retained structure.
   </div>
 <p style="font-size:0.9rem; color:var(--text-dim); margin-top:12px;"><span class="lemma msp-auto">Violation of any invariant disqualifies the object as a holographic kernel, regardless of substrate.</span></p>
 </div>
@@ -828,6 +850,41 @@ document <em>says</em>. It simply does not carry the rules by which the document
 <!-- Construction Protocol -->
 <div class="section">
 <h2>Construction Protocol</h2>
+<figure class="hk-fig hk-fig-sm">
+<svg viewBox="0 0 620 156" role="img" aria-label="A source document compresses to a small kernel; the kernel expands to a reconstruction; the reconstruction is compared back to the source, producing a yield. At or above 0.85 the fragment is a candidate kernel; below it, it is not.">
+<g fill="none" stroke="#a89060" stroke-width="1.2">
+<rect x="12" y="42" width="92" height="68" opacity=".65"/>
+<rect x="192" y="60" width="40" height="32" stroke="#c8a868" stroke-width="1.5"/>
+<rect x="316" y="42" width="92" height="68" opacity=".6" stroke-dasharray="5 4"/>
+</g>
+<g stroke="#c8a868" stroke-width=".8" opacity=".5" fill="none">
+<path d="M22 58h72M22 70h52M22 82h72M22 94h44"/>
+<path d="M326 58h72M326 70h52M326 82h72M326 94h44"/>
+</g>
+<g stroke="#c8a868" stroke-width=".7" opacity=".85" fill="none"><path d="M199 68h26M199 76h17M199 84h26"/></g>
+<g stroke="#a89060" stroke-width="1.2" fill="none">
+<path d="M112 76h68"/><path d="M174 72l6 4-6 4"/>
+<path d="M240 76h68"/><path d="M302 72l6 4-6 4"/>
+</g>
+<path d="M362 120 C362 142, 58 142, 58 120" stroke="#c8a868" stroke-width="1.1" fill="none" opacity=".8"/>
+<path d="M62 124l-4-5-4 5" stroke="#c8a868" stroke-width="1.1" fill="none"/>
+<g font-family="'IBM Plex Mono',monospace" letter-spacing=".05em">
+<text x="58" y="32" text-anchor="middle" font-size="9.5" fill="#8a8478">SOURCE</text>
+<text x="212" y="50" text-anchor="middle" font-size="9.5" fill="#c8a868">KERNEL</text>
+<text x="362" y="32" text-anchor="middle" font-size="9.5" fill="#8a8478">RECONSTRUCTION</text>
+<text x="146" y="68" text-anchor="middle" font-size="8" fill="#a89060">compress</text>
+<text x="274" y="68" text-anchor="middle" font-size="8" fill="#a89060">expand</text>
+<text x="210" y="152" text-anchor="middle" font-size="8.5" fill="#c8a868">compare &#8212; yield</text>
+<text x="440" y="70" font-size="9" fill="#c8a868">&#8805; 0.85  candidate kernel</text>
+<text x="440" y="90" font-size="9" fill="#8a8478">&lt; 0.85  not a kernel</text>
+</g>
+</svg>
+<figcaption><b>The Back-Projection Test is a loop, not a score.</b> The kernel is expanded
+<em>without reference to the source</em>, and only then compared against it. What the
+comparison measures is not similarity of wording but recovery of structure &mdash; which is
+why a fluent summary can score near zero.</figcaption>
+</figure>
+
 <div class="step">
 <span class="step-num">01</span>
 <div class="step-content"><strong>Extract the seed.</strong> UKTP method — five questions: agents, operations, dependencies, constraints, topology. The seed is these answers compressed to one specification.</div>
