@@ -223,14 +223,14 @@ body {
 }
 
 .hero-definition {
-  background: var(--bg2);
-  border: 1px solid rgba(168,144,96,0.18);
-  border-radius: 4px;
-  padding: 28px 32px;
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: left;
-}
+        background: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 46ch;
+        text-align: left;
+      }
 
 .hero-definition p {
   font-size: 1.15rem;
@@ -241,7 +241,15 @@ body {
 
 .hero-definition p:last-child { margin-bottom: 0; }
 
-.hero-definition .key-sentence {
+.hero-definition .hk-mark { margin: 0 auto 30px; width: 132px; }
+      .hk-mark svg { width: 100%; height: auto; display: block; }
+      .hero-definition > p { font-size: 1.06rem; line-height: 1.75; }
+      .hero-definition .key-sentence + p { margin-top: 22px; }
+      @media (max-width: 560px) {
+        .hk-mark { width: 104px; margin-bottom: 24px; }
+        .hero-definition { max-width: none; }
+      }
+      .key-sentence {
   color: var(--accent-bright);
   font-weight: 600;
   font-size: 1.2rem;
@@ -525,6 +533,32 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <p style="font-size:0.78rem; color:var(--text-dim); text-align:center; margin-top:8px;">
       — William Blake, <em>Auguries of Innocence</em> (c. 1803)
     </p>
+</div>
+<div class="hk-mark" aria-hidden="true">
+<svg viewBox="0 0 240 240" role="img" aria-label="A square field of ruled lines whose spacing widens outward. Its upper-left ninth is marked, and inside that fragment the same figure appears again at one-third scale, and again inside that: the part carries the rule of the whole.">
+  <g fill="none" stroke="#c8a868" stroke-linecap="square">
+    <!-- L0 · the whole: rule spacing widens outward from the boundary -->
+    <rect x="14" y="14" width="212" height="212" stroke-width="1.1" opacity=".55"/>
+    <g stroke-width=".9" opacity=".38">
+      <path d="M14 36 H226 M14 60 H226 M14 88 H226 M14 122 H226 M14 162 H226"/>
+      <path d="M36 14 V226 M60 14 V226 M88 14 V226 M122 14 V226 M162 14 V226"/>
+    </g>
+    <!-- L1 · the marked fragment — one ninth, upper left -->
+    <rect x="14" y="14" width="74" height="74" stroke-width="1.4" opacity=".95"/>
+    <g stroke-width=".85" opacity=".7">
+      <path d="M14 22 H88 M14 30 H88 M14 41 H88 M14 55 H88 M14 72 H88"/>
+      <path d="M22 14 V88 M30 14 V88 M41 14 V88 M55 14 V88 M72 14 V88"/>
+    </g>
+    <!-- L2 · and inside the fragment, the figure again -->
+    <rect x="14" y="14" width="26" height="26" stroke-width="1.2" opacity="1"/>
+    <g stroke-width=".7" opacity=".85">
+      <path d="M14 17 H40 M14 21 H40 M14 26 H40 M14 33 H40"/>
+      <path d="M17 14 V40 M21 14 V40 M26 14 V40 M33 14 V40"/>
+    </g>
+    <!-- L3 · the seed. Where the regress stops being drawable and starts being implied -->
+    <rect x="14" y="14" width="9" height="9" stroke-width="1" fill="#c8a868" opacity=".9"/>
+  </g>
+</svg>
 </div>
 <h1>Holographic Kernel</h1>
 <p class="subtitle">The General Definition of Reconstructive Compression</p>
