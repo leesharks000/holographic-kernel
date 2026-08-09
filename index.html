@@ -182,7 +182,7 @@
   --accent-bright: #c8a868;
   --accent-dim: rgba(168,144,96,0.12);
   --red: #b84030;
-  --blue: #7fa8d8;
+  --blue: #a8bcd0;
   --serif: 'Cormorant Garamond', 'Palatino', Georgia, serif;
   --mono: 'JetBrains Mono', 'Consolas', monospace;
 }
@@ -324,6 +324,20 @@ body {
         table td::before { content: attr(data-label);
           font-family: var(--mono); font-size: 0.58rem; text-transform: uppercase;
           letter-spacing: 0.1em; color: var(--text-dim); }
+      }
+      .grain { margin: 0 auto 22px; width: 120px; }
+      .grain svg { width: 100%; height: auto; display: block; }
+      table.kernel-schema { width: 100%; border-collapse: collapse; margin-bottom: 14px;
+        font-size: 0.82rem; }
+      table.kernel-schema th { font-family: var(--mono); font-weight: 400; text-align: left;
+        color: var(--accent-bright); vertical-align: top; padding: 4px 12px 4px 0;
+        white-space: nowrap; }
+      table.kernel-schema td { color: var(--text); vertical-align: top; padding: 4px 0;
+        line-height: 1.5; }
+      table.kernel-schema tr + tr th, table.kernel-schema tr + tr td {
+        border-top: 1px solid rgba(168,144,96,0.10); }
+      @media (max-width: 620px) {
+        table.kernel-schema th { white-space: normal; }
       }
       .epigraph-block { margin: 44px auto 0; max-width: 520px;
         border-top: 1px solid rgba(168,144,96,0.16); padding-top: 30px; }
@@ -657,6 +671,21 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <span class="key-sentence">A summary discards structure to save space.<br/>A kernel discards material to save structure.</span>
 <p class="hero-why">In the age of AI summarization, most documents are compressed into summaries that discard the architecture of thought and preserve only the facade of conclusion. A reader cannot reconstruct the reasoning from a summary; they can only trust or distrust it. The holographic kernel is a defense against this epistemic flattening &mdash; the minimum unit of reconstructible knowledge.</p>
 <div class="epigraph-block">
+<div class="grain" aria-hidden="true">
+<svg viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#a89060" stroke-linecap="square">
+    <path d="M4 22 H40" stroke-width=".7" opacity=".35"/>
+    <path d="M80 22 H116" stroke-width=".7" opacity=".35"/>
+    <rect x="46" y="8" width="28" height="28" stroke-width=".9" opacity=".55"/>
+    <g stroke-width=".6" opacity=".33">
+      <path d="M46 15 H74 M46 21 H74 M46 29 H74"/>
+      <path d="M53 8 V36 M59 8 V36 M67 8 V36"/>
+    </g>
+    <rect x="56" y="18" width="8" height="8" fill="#c8a868" stroke="none" opacity=".92"/>
+  </g>
+</svg>
+</div>
+
 <div style="margin-bottom:36px; max-width:520px; margin-left:auto; margin-right:auto;">
 <p style="font-size:1.15rem; font-style:italic; color:var(--accent-bright); line-height:1.8; text-align:center; letter-spacing:0.02em;">
       To see a World in a Grain of Sand<br/>
@@ -736,11 +765,7 @@ about 800 words. Only one of them can be expanded back.</p>
   </div>
   <div class="cmp-col cmp-pass">
     <span class="cmp-kind">Kernel</span>
-    <pre class="cmp-sample">agents        who is present, in what formal role
-operations    what the text <b>performs</b>, not describes
-dependencies  what must precede, enable, cost what
-constraints   what is forbidden, required, invariant
-topology      hierarchy · loop · one-way gate · coupling</pre>
+    <table class="kernel-schema"><tbody><tr><th scope="row">agents</th><td>who is present, in what formal role</td></tr><tr><th scope="row">operations</th><td>what the text <b>performs</b>, not describes</td></tr><tr><th scope="row">dependencies</th><td>what must precede, enable, cost what</td></tr><tr><th scope="row">constraints</th><td>what is forbidden, required, invariant</td></tr><tr><th scope="row">topology</th><td>hierarchy · loop · one-way gate · coupling</td></tr></tbody></table>
 <p class="cmp-src">The five questions of the Universal Kernel Transform Protocol
 (<a href="https://www.alexanarch.org/s/records/547/">EA-UKTP v1.1</a>). The seed is
 these answers compressed to one formal specification &mdash; not the theme, not the
