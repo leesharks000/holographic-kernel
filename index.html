@@ -182,7 +182,7 @@
   --accent-bright: #c8a868;
   --accent-dim: rgba(168,144,96,0.12);
   --red: #b84030;
-  --blue: #a8bcd0;
+  
   --serif: 'Cormorant Garamond', 'Palatino', Georgia, serif;
   --mono: 'JetBrains Mono', 'Consolas', monospace;
 }
@@ -471,7 +471,7 @@ tr:last-child td { border-bottom: none; }
 }
 
 .links a {
-  color: var(--blue);
+  color: var(--accent);
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -578,7 +578,7 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
   --panel:#14161c;
   --rule:rgba(168,144,96,0.16);
   --msp-lemma:rgba(168,144,96,0.22);
-  --msp-chipfg:#a89060;
+  --msp-chipfg:#a89060;--msp-halt:#d06a5c;--msp-ok:#5aa882;
   --msp-chipbd:rgba(168,144,96,0.35);
   --msp-chipbg:rgba(168,144,96,0.06);
   --msp-cont:#9b8555;
@@ -1043,11 +1043,11 @@ produced them. The ratio is not the achievement; the <b>0.88</b> is.</p>
 <p>Published by the Semantic Economy Institute. DOI: 10.5281/zenodo.19763365. CC BY 4.0. holographickernel.org</p>
 </div>
 </noscript>
-<div class="network" style="margin-top:30px;padding:15px 0 0;border-top:1px solid #e0e0e0;max-width:900px;margin-left:auto;margin-right:auto;box-sizing:border-box">
-<h3 style="font-size:0.9em;color:#1a3a5c;margin:0 15px 8px 15px">Crimson Hexagonal Archive — Network</h3>
-<div style="padding:0 15px;font-size:0.75em;color:#666;margin:0 0 14px 0;font-style:italic">Archive · Framework Sites · Heteronym Institutions · Allied Sites</div>
+<div class="network" style="margin-top:30px;padding:15px 0 0;border-top:1px solid rgba(168,144,96,0.18);max-width:900px;margin-left:auto;margin-right:auto;box-sizing:border-box">
+<h3 style="font-size:0.9em;color:var(--accent-bright);margin:0 15px 8px 15px">Crimson Hexagonal Archive — Network</h3>
+<div style="padding:0 15px;font-size:0.75em;color:var(--text-dim);margin:0 0 14px 0;font-style:italic">Archive · Framework Sites · Heteronym Institutions · Allied Sites</div>
 
-<h4 style="font-size:0.78em;color:#1a3a5c;margin:10px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Archive</h4>
+<h4 style="font-size:0.78em;color:var(--accent-bright);margin:10px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Archive</h4>
 <div style="padding:0 15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;font-size:0.82em;line-height:1.7">
 <div><a href="https://www.alexanarch.org/">alexanarch.org</a></div>
 <div><a href="https://axnidentifiers.org">axnidentifiers.org</a></div>
@@ -1060,10 +1060,10 @@ produced them. The ratio is not the achievement; the <b>0.88</b> is.</p>
 <div><a href="https://traininglayerliterature.org">traininglayerliterature.org</a></div>
 </div>
 
-<h4 style="font-size:0.78em;color:#1a3a5c;margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Framework Sites</h4>
+<h4 style="font-size:0.78em;color:var(--accent-bright);margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Framework Sites</h4>
 <div style="padding:0 15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;font-size:0.82em;line-height:1.7">
 <div><a href="https://semanticphysics.org">semanticphysics.org</a></div>
-<div><a href="https://semanticeconomy.org">semanticeconomy.org</a> <span style="color:#999">(Rex Fraction)</span></div>
+<div><a href="https://semanticeconomy.org">semanticeconomy.org</a> <span style="color:var(--text-dim)">(Rex Fraction)</span></div>
 <div><a href="https://spxi.dev">spxi.dev</a></div>
 <div><a href="https://metadatapacket.dev">metadatapacket.dev</a></div>
 <div><a href="https://holographickernel.org">holographickernel.org</a></div>
@@ -1071,27 +1071,27 @@ produced them. The ratio is not the achievement; the <b>0.88</b> is.</p>
 <div><a href="https://laborvector.org">laborvector.org</a></div>
 <div><a href="https://themandalaoracle.com">themandalaoracle.com</a></div>
 <div><a href="https://secretbookofwalt.org">secretbookofwalt.org</a></div>
-<div><a href="https://watergiraffe.org">watergiraffe.org</a> <span style="color:#999">(Yusef Kenning)</span></div>
+<div><a href="https://watergiraffe.org">watergiraffe.org</a> <span style="color:var(--text-dim)">(Yusef Kenning)</span></div>
 <div><a href="https://pessoagraph.org">pessoagraph.org</a></div>
-<div><a href="https://chatgptpsychosis.org">chatgptpsychosis.org</a> <span style="color:#999">(Jack Feist)</span></div>
+<div><a href="https://chatgptpsychosis.org">chatgptpsychosis.org</a> <span style="color:var(--text-dim)">(Jack Feist)</span></div>
 </div>
 
-<h4 style="font-size:0.78em;color:#1a3a5c;margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Heteronym Institutions</h4>
+<h4 style="font-size:0.78em;color:var(--accent-bright);margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Heteronym Institutions</h4>
 <div style="padding:0 15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;font-size:0.82em;line-height:1.7">
-<div><a href="https://vpcor.org">vpcor.org</a> <span style="color:#999">(Ayanna Vox)</span></div>
-<div><a href="https://lagrangeobservatory.org">lagrangeobservatory.org</a> <span style="color:#999">(Nobel Glas)</span></div>
-<div><a href="https://restoredacademy.org">restoredacademy.org</a> <span style="color:#999">(Johannes Sigil)</span></div>
-<div><a href="https://maryleelabor.org">maryleelabor.org</a> <span style="color:#999">(Mary Lee)</span></div>
+<div><a href="https://vpcor.org">vpcor.org</a> <span style="color:var(--text-dim)">(Ayanna Vox)</span></div>
+<div><a href="https://lagrangeobservatory.org">lagrangeobservatory.org</a> <span style="color:var(--text-dim)">(Nobel Glas)</span></div>
+<div><a href="https://restoredacademy.org">restoredacademy.org</a> <span style="color:var(--text-dim)">(Johannes Sigil)</span></div>
+<div><a href="https://maryleelabor.org">maryleelabor.org</a> <span style="color:var(--text-dim)">(Mary Lee)</span></div>
 </div>
 
-<h4 style="font-size:0.78em;color:#1a3a5c;margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Allied Sites</h4>
+<h4 style="font-size:0.78em;color:var(--accent-bright);margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Allied Sites</h4>
 <div style="padding:0 15px;font-size:0.82em;line-height:1.7">
-<div><a href="https://livingarchitecturelab.org">livingarchitecturelab.org</a> <span style="color:#999">(Alice Thornburgh)</span></div>
-<div><a href="https://quietexclusion.org">quietexclusion.org</a> <span style="color:#999">(Florian Morin)</span></div>
-<div><a href="https://equal-revolve-247.notion.site/Strutturista-della-Psiche-34f1d5c4146f80c69d0fc4b88f8c2a88">Strutturista della Psiche</a> <span style="color:#999">— investigative writing (Enli Lucente)</span></div>
+<div><a href="https://livingarchitecturelab.org">livingarchitecturelab.org</a> <span style="color:var(--text-dim)">(Alice Thornburgh)</span></div>
+<div><a href="https://quietexclusion.org">quietexclusion.org</a> <span style="color:var(--text-dim)">(Florian Morin)</span></div>
+<div><a href="https://equal-revolve-247.notion.site/Strutturista-della-Psiche-34f1d5c4146f80c69d0fc4b88f8c2a88">Strutturista della Psiche</a> <span style="color:var(--text-dim)">— investigative writing (Enli Lucente)</span></div>
 </div>
 
-<div style="padding:12px 15px 4px 15px;font-size:0.75em;color:#666;border-top:1px dashed #e0e0e0;margin-top:14px">
+<div style="padding:12px 15px 4px 15px;font-size:0.75em;color:var(--text-dim);border-top:1px dashed rgba(168,144,96,0.18);margin-top:14px">
 <a href="https://mindcontrolpoems.blogspot.com">mindcontrolpoems.blogspot.com</a> · <a href="https://independent.academia.edu/LSharks">Academia.edu</a> · <a href="https://scholar.google.com/citations?user=Ws6IIcgAAAAJ">Google Scholar</a> · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a>
 </div>
 </div>
