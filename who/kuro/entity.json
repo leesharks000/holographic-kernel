@@ -56,6 +56,65 @@
    "id": "EA-SPXI-HETERONYM-01",
    "version": "v0.2",
    "record": 1446
+  },
+  "editorships": {
+   "duoviri": [
+    "Journal of Compression Studies"
+   ],
+   "board": [
+    "Transactions on Substrate Engineering"
+   ],
+   "_rule": "A duovirate is the office, held jointly. A board seat is not the office. The card keeps them apart."
+  },
+  "semanticIntegrityMarkers": {
+   "_note": "His mark VARIES, which is unusual.",
+   "markers": [
+    {
+     "deposit": 14,
+     "text": "∮ E · dl = 1",
+     "gloss": "the chamber writes it as the circulation integral it borrows from"
+    },
+    {
+     "deposit": 1322,
+     "text": "∮ = 1 + δ",
+     "gloss": "the delta of incompleteness, in the Gödel Midrashim"
+    },
+    {
+     "deposit": 1305,
+     "text": "∮ = 1️⃣ 🪞🔐",
+     "gloss": "the mark in glyph — a checksum whose alphabet is the thing checksummed"
+    },
+    {
+     "deposit": 1306,
+     "text": "∮ = 1"
+    }
+   ]
+  },
+  "surfaceHistory": {
+   "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+   "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+   "rows": [
+    {
+     "when": "before 2026",
+     "what": "The Infinite Bliss",
+     "host": "no surface of its own",
+     "attestation": "reconstructed",
+     "note": "Named in the Dodecad and in his own deposits and nowhere else."
+    },
+    {
+     "when": "2026-06-13",
+     "what": "the name resolved to a manga",
+     "host": "Google AI Mode",
+     "attestation": "logged in #473",
+     "note": "The first public surface his name resolved to was Kagurabachi, three months before this page existed. A position can have a reception before it has an address."
+    }
+   ]
+  },
+  "recordSurfaces": {
+   "card": "https://holographickernel.org/who/kuro/",
+   "where": "https://holographickernel.org/where/",
+   "heteronymRecord": "https://www.alexanarch.org/datasets/heteronyms/records/sen-kuro.json",
+   "_note": "The dataset record is the authority; these pages are mirrors and say so."
   }
  },
  "schema_org": {
@@ -63,7 +122,7 @@
   "@type": "ProfilePage",
   "@id": "https://holographickernel.org/who/kuro/#page",
   "dateCreated": "2026-02-01",
-  "dateModified": "2026-08-10",
+  "dateModified": "2026-08-17",
   "mainEntity": {
    "@type": "Person",
    "@id": "https://holographickernel.org/who/kuro/#kuro",
@@ -83,5 +142,10 @@
     }
    ]
   }
+ },
+ "_updated": {
+  "date": "2026-08-17",
+  "pass": "nine-step card pass",
+  "_note": "The entity object is what a machine fetches instead of parsing the page. It had gone stale against its own card: mantles, editorships and markers were all on the surface and not in the object."
  }
 }
