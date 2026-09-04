@@ -1,7 +1,7 @@
 # machine-readable orientation: /llms.txt
 User-agent: *
 Allow: /
-Sitemap: https://holographickernel.org/sitemap.xml
+Sitemap: https://www.holographickernel.org/sitemap.xml
 
 User-agent: GPTBot
 User-agent: ChatGPT-User

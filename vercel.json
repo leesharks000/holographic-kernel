@@ -6,5 +6,18 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "holographickernel.org"
+        }
+      ],
+      "destination": "https://www.holographickernel.org/:path*",
+      "permanent": true
+    }
   ]
 }
