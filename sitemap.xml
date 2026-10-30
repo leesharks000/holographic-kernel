@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.holographickernel.org/</loc><lastmod>2026-09-01</lastmod><priority>1.0</priority></url>
-  <url><loc>https://www.holographickernel.org/where</loc><lastmod>2026-08-21</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.holographickernel.org/who/kuro</loc><lastmod>2026-08-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.holographickernel.org/</loc><lastmod>2026-10-25</lastmod><priority>1.0</priority></url>
   <url><loc>https://www.holographickernel.org/glyphic</loc><lastmod>2026-10-28</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/constitution</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/emoji-transform</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/epistle</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/ezekiel-engine</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/golden-tickets</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/gospel</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/lunar-arm</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/new-human-2</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.holographickernel.org/glyphic/packet</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.holographickernel.org/glyphic/personal-instance-001</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/new-human-2</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/transmission-division-recollection</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.holographickernel.org/glyphic/seed-cone-leap</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/ezekiel-engine</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/constitution</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/gospel</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/epistle</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.holographickernel.org/glyphic/space-ark</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/lunar-arm</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/emoji-transform</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.holographickernel.org/glyphic/golden-tickets</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/glyphic/transmission-division-recollection</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.holographickernel.org/where</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.holographickernel.org/who/kuro</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
 </urlset>
