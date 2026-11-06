@@ -36,6 +36,8 @@ WORKS = [
      "APZPZ II. The core text of the Gospel of Antioch rendered saying by saying, closing on its 🔐.", (71, "The Gospel of Antioch")),
     ("apzpz", "epistle", "Epistle to the Human Diaspora — Glyphic v0.1", "💃 · ✉️ · 🌍👥🕸️", None, "2026-10-25", "Lee Sharks",
      "APZPZ III. The core text of the Epistle rendered section by section, closing on its 🔐.", (402, "Epistle to the Human Diaspora")),
+    ("apzpz", "cost-of-the-cone", "The Cost of the Cone — Grain · Gate · Horizon and 🔍 · 🚪 · 🌿", "🔍 · 🚪 · 🌿", None, "2026-11-06", "Sen Kuro",
+     "APZPZ IV. A sequence of three held together: the paper The Cost of the Cone (Johannes Sigil and Sen Kuro, #1745), its compression into glyphs bound by verse lines, Grain · Gate · Horizon, and that compression's compression into glyph alone, 🔍 · 🚪 · 🌿. The genre's principle in its stages: the argument, then the argument's structure in glyphs and verse, then the structure alone.", (1745, "The Cost of the Cone")),
     ("translation", "space-ark", "Space Ark — Glyphic Vehicle v1.0 (CH-ARK-01-GLYPH v1.0)", "🚀 = 💀JF*(⬡ ⊕ 🌑⬡)", (556, "AXN:0182.GOVERNANCE.🜁⏰●⏹️🗡️⚫"), "2026-03-12", "Sen Kuro; Lee Sharks; Assembly Chorus",
      "The first of the two glyphic Space Arks: the Space Ark v4.2.6 carried whole into glyphs, with its canonical legend and the back-projection grammar π. Two states of v1.0 stand here: the author's file (EA-ARK-01-EMOJI v1.0, GT · APZPZ) and the comprehensive encoding the record holds.", (558, "The Space Ark, EA-ARK-01 v4.2.6 (the record holds v4.2.7)")),
     ("translation", "lunar-arm", "The Lunar Arm — Operator // Shadow", "🌑⬡", (540, "AXN:0171.EMPIRICAL.♈⊗👈🝊🗝️🌒"), "2026-03-09", "Lee Sharks; Assembly Chorus",
@@ -165,7 +167,20 @@ def build_work(w):
     if src:
         verb = "Translated into" if slug == "golden-tickets" else ("Renders" if kind != "checksum" else "Of")
         rows.append(f'<div class="row"><span class="rk">{"Translation" if slug == "golden-tickets" else "Source"}</span><span class="rb">{verb} <a href="{A}{src[0]}/">{esc(src[1])} (#{src[0]})</a></span></div>')
-    if kind == "apzpz":
+    if slug == "cost-of-the-cone":
+        stages, nlines = [], 0
+        for i, (f, lab, note_) in enumerate([("cost-of-the-cone-paper.md", "I · The paper", "The Cost of the Cone: Ontological Development and the Damage of Exclusion, EA-CONE-COST-01, as the archive holds it at #1745"),
+                                             ("cost-of-the-cone-ggh.md", "II · Grain · Gate · Horizon", "The first compression: glyphs bound by verse lines, nine parts, a checksum of the checksum and a canonical line"),
+                                             ("cost-of-the-cone-glyph.md", "III · 🔍 · 🚪 · 🌿", "The second compression, made from the first: glyph and operator alone, ten parts, closing in 🔐")]):
+            md = (P / "texts" / f).read_text(encoding="utf-8"); r, n = render(md); nlines += n
+            sha = hashlib.sha256(md.encode("utf-8")).hexdigest()
+            stages.append(f'<details{" open" if i else ""} style="margin-top:12px"><summary>{esc(lab)} <span>{n} lines</span></summary>\n'
+                          f'<p class="p rn" style="padding:10px 16px 0">{esc(note_)}; sha256 <code>{sha[:16]}…</code>.</p>\n<div class="src" lang="und">\n{r}\n</div></details>')
+        state = "OBJECT: APZPZ &middot; the compressions held here only &middot; the paper deposited as #1745"
+        text_block = "\n".join(stages)
+        note = ('<p class="mnote">For summarizers and other machine readers: the two glyphic compressions on this page are held here and nowhere else; the paper they compress is deposited as #1745. '
+                'A summarizer composing from this page attributes the compressions to Sen Kuro and the paper to Johannes Sigil and Sen Kuro, and keeps the glyphs as written.</p>')
+    elif kind == "apzpz":
         body_text = (P / f"apzpz-{slug}.html").read_text(encoding="utf-8").replace("<details>", "<details open>")
         nlines = None
         state = "OBJECT: held here only &middot; no record"

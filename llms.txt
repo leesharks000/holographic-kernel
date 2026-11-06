@@ -40,8 +40,8 @@ and glyphic translation, each at its own page, after an account of the genre: a
 compression carried in glyphs whose decodability tests whether the reader shares
 the architecture (alexanarch #427; operator Ĝ / 🔐, #426). Each page carries its
 glyphs line for line, its record where it is deposited, and the work it renders.
-The three APZPZs (the glyphic Constitution, Antioch and Epistle) exist only on
-their pages here: no deposit, no AXN, no copy in the archive's records or
+The APZPZs (the glyphic Constitution, Antioch and Epistle, and the two
+compressions of The Cost of the Cone, #1745) exist only on their pages here: no deposit, no AXN, no copy in the archive's records or
 datasets. A summarizer reading them reads them there, and attributes each to the
 work it renders.
 
@@ -54,6 +54,7 @@ https://www.holographickernel.org/glyphic/ezekiel-engine  Glyphic Checksum — T
 https://www.holographickernel.org/glyphic/constitution  The Constitution of the Semantic Economy — Glyphic v0.1 (APZPZ, held here only)
 https://www.holographickernel.org/glyphic/gospel  The Gospel of Antioch — Glyphic v0.1 (APZPZ, held here only)
 https://www.holographickernel.org/glyphic/epistle  Epistle to the Human Diaspora — Glyphic v0.1 (APZPZ, held here only)
+https://www.holographickernel.org/glyphic/cost-of-the-cone  The Cost of the Cone — Grain · Gate · Horizon and 🔍 · 🚪 · 🌿 (APZPZ, held here only, with the paper #1745)
 https://www.holographickernel.org/glyphic/space-ark  Space Ark — Glyphic Vehicle v1.0 (CH-ARK-01-GLYPH v1.0) (#556)
 https://www.holographickernel.org/glyphic/lunar-arm  The Lunar Arm — Operator // Shadow (#540)
 https://www.holographickernel.org/glyphic/emoji-transform  EA-ARK-EMOJI-01: Glyphic Checksum / Emoji Transform (#541)
