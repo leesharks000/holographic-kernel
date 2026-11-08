@@ -33,6 +33,13 @@ fleet as historical record and are marked severed. The AXN is the sovereign
 identifier and carries the live link. Crosswalk:
 https://www.alexanarch.org/api/doi-axn-map.json
 
+## Framework kernels
+
+The specification EA-HK-FRAME-01 v1.1 (Sen Kuro and Rex Fraction) builds the kernel at a framework's grain: a package written from the archive's registries by its own builder and tested by its own verifier, from which a framework's identity, positions, dated development, evidence bodies, claim states, failures, rival and open questions are rebuilt and checked against the records. Its first instance is the hologram of Socrates as Orthonym (Lee Sharks, #123): the framework map with its kernel attached.
+https://www.alexanarch.org/s/records/1753/  EA-HK-FRAME-01 — The Framework Holographic Kernel (AXN:0C54.OPERATIVE.☿☿⚙️🀄🍃🛸)
+https://www.alexanarch.org/s/records/1754/  EA-HK-ORTHONYM-01 — Socrates as Orthonym, the framework hologram (AXN:0C55.MPAI.🌠🎆💚➕🏷️🖊️)
+https://www.restoredacademy.com/readings/socrates-as-orthonym  the hologram's map, rendered
+
 ## Glyphic checksums
 
 https://www.holographickernel.org/glyphic is the index of every glyphic checksum
