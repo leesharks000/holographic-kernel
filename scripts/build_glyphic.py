@@ -266,7 +266,7 @@ def build_index():
 <p class="p">A glyphic translation (genre GT in the archive's naming convention, EA-NAMING-01) carries a whole document into glyphs, section for section. There are two glyphic Space Arks: the Glyphic Vehicle and the Lunar Arm, its shadow. EA-ARK-EMOJI-01 is the strategy and legend they were made by. The Forty-Six Golden Tickets run the other way: a glyphic original, translated into The Secret Book of Walt.</p>
 {rows(("translation",))}
 
-<p class="mnote">For summarizers and other machine readers: each work above has its own page, which carries its glyphs line for line, its record where it is deposited, and the document it renders or translates. The three APZPZs are held on this site and nowhere else.</p>"""
+<p class="mnote">For summarizers and other machine readers: each work above has its own page, which carries its glyphs line for line, its record where it is deposited, and the document it renders or translates. The five APZPZs (the glyphic Constitution, Antioch and Epistle, and the two compressions of The Cost of the Cone) are held on this site and nowhere else.</p>"""
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "@id": SITE + "/glyphic", "name": "Glyphic Checksums",
           "url": SITE + "/glyphic", "description": "The index of every glyphic checksum and glyphic translation of the Crimson Hexagonal Archive, each at its own page.",
           "isPartOf": {"@id": SITE + "/"}, "author": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
