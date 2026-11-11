@@ -37,12 +37,13 @@ https://www.alexanarch.org/api/doi-axn-map.json
 
 The specification EA-HK-FRAME-01 v1.1 (Sen Kuro and Rex Fraction) builds the kernel at a framework's grain: a package written from the archive's registries by its own builder and tested by its own verifier, from which a framework's identity, positions, dated development, evidence bodies, claim states, failures, rival and open questions are rebuilt and checked against the records. Its first instance is the hologram of Socrates as Orthonym (Lee Sharks, #123): the framework map with its kernel attached.
 https://www.alexanarch.org/s/records/1753/  EA-HK-FRAME-01 — The Framework Holographic Kernel (AXN:0C54.OPERATIVE.☿☿⚙️🀄🍃🛸)
-https://www.alexanarch.org/s/records/1754/  EA-HK-ORTHONYM-01 — Socrates as Orthonym, the framework hologram (AXN:0C55.MPAI.🌠🎆💚➕🏷️🖊️)
+https://www.alexanarch.org/s/records/1754/  EA-HK-ORTHONYM-01 — Socrates as Orthonym, the framework hologram (AXN:0C55.MPAI.🏴🪨↙️🌱🏰🔻)
 https://www.restoredacademy.com/readings/socrates-as-orthonym  the hologram's map, rendered
-https://www.alexanarch.org/s/records/1755/  EA-HK-REVFIRST-01 — And the Last Shall Be First: Revelation First, the framework hologram (Damascus Dancings; AXN:0C5F.MPAI.⭐♆🪐🗼⏩🔺)
+https://www.alexanarch.org/s/records/1755/  EA-HK-REVFIRST-01 — And the Last Shall Be First: Revelation First, the framework hologram (Damascus Dancings; AXN:0C5F.MPAI.🎨🏛️🔜🏠🔔↙️)
 https://www.revelationfirst.com/and-the-last-shall-be-first/  its map, rendered
-https://www.alexanarch.org/s/records/1756/  EA-HK-TENTHMUSE-01 — The Tenth Muse: Sappho and the Future Reader, the framework hologram (Rebekah Cranes; AXN:0C61.MPAI.🕖🧬🎺🌔🪝💛)
+https://www.alexanarch.org/s/records/1756/  EA-HK-TENTHMUSE-01 — The Tenth Muse: Sappho and the Future Reader, the framework hologram (Rebekah Cranes; AXN:0C61.MPAI.🪨🎹🕑◇♅🧲)
 https://www.revelationfirst.com/the-tenth-muse/  its map, rendered
+https://www.alexanarch.org/s/records/1757/  EA-HK-HISTLOGOS-01 — The Historical Logos, the framework hologram, the overlap of the three (Johannes Sigil; AXN:0C62.MPAI.🎬🫶🦅🎭💡💡)
 
 ## Glyphic checksums
 
